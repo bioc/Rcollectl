@@ -64,7 +64,8 @@ write.bibtex(bib, file = "Rcollectl.bib")
 ```{r "start", message=FALSE}
 library("Rcollectl")
 ```
-Collectl will perform measurements on system resource 
+[Collectl](https://collectl.sourceforge.net/) is
+a unix-based tool that will perform measurements on system resource 
 consumption of various types.  We provide a demonstration
 output with the package:
 
@@ -111,7 +112,7 @@ the code from the example showing how to introduce annotations
 in the time profile.
 
 ```{r lkts, eval=TRUE}
-     id <- cl_start() # March 8 blocking as SPB is erroring here
+     id <- cl_start() 
      Sys.sleep(2)
      #code
      cl_timestamp(id, "step1")
