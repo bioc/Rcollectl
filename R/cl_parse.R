@@ -4,7 +4,9 @@
 #' @param path character(1) path to (possibly gzipped) collectl output
 #' @param tz character(1) POSIXct time zone code, defaults to "EST"
 #' @return a data.frame
-#' @note A lubridate datetime is added as a column.
+#' @note A lubridate datetime is added as a column.  The test file `demo_1123.tab.gz` is
+#' a collectl-generated report for a session ranging over 10 minutes, analyzing RNA-seq data
+#' on a multicore machine.
 #' @examples
 #' lk = cl_parse(system.file("demotab/demo_1123.tab.gz", package="Rcollectl"))
 #' head(lk)

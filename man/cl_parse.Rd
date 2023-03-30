@@ -18,7 +18,9 @@ a data.frame
 parse a collectl output -- could be conditional on discovered call
 }
 \note{
-A lubridate datetime is added as a column.
+A lubridate datetime is added as a column.  The test file \code{demo_1123.tab.gz} is
+a collectl-generated report for a session ranging over 10 minutes, analyzing RNA-seq data
+on a multicore machine.
 }
 \examples{
 lk = cl_parse(system.file("demotab/demo_1123.tab.gz", package="Rcollectl"))
