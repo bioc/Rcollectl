@@ -31,6 +31,7 @@ Functions to add time stamps to collectl output
 }
 \examples{
 id <- cl_start() 
+print(id)
 Sys.sleep(2)
 cl_timestamp(id, "step1")
 Sys.sleep(2)
@@ -42,6 +43,7 @@ cl_timestamp(id, "step3")
 Sys.sleep(2)
 cl_stop(id)
 path <- cl_result_path(id)
+print(path)
 plot_usage(cl_parse(path)) +
   cl_timestamp_layer(path) +
   cl_timestamp_label(path) +

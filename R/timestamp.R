@@ -12,6 +12,7 @@ cl_timestamp_file <- function(proc) {
 #' @return `cl_timestamp()` returns a tab delimited text file
 #' @examples
 #' id <- cl_start() 
+#' print(id)
 #' Sys.sleep(2)
 #' cl_timestamp(id, "step1")
 #' Sys.sleep(2)
@@ -62,6 +63,7 @@ cl_timestamp_data <- function(arg, tz="EST") {
 #' @return `cl_timestamp_layer()` and `cl_timestamp_label()` return objects that can be combined with ggplot.
 #' @examples
 #' path <- cl_result_path(id)
+#' print(path)
 #' plot_usage(cl_parse(path)) +
 #'   cl_timestamp_layer(path) +
 #'   cl_timestamp_label(path) +
