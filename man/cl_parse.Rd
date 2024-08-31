@@ -4,12 +4,14 @@
 \alias{cl_parse}
 \title{parse a collectl output -- could be conditional on discovered call}
 \usage{
-cl_parse(path, tz = "EST")
+cl_parse(path, tz = "EST", rescale_mem = TRUE)
 }
 \arguments{
 \item{path}{character(1) path to (possibly gzipped) collectl output}
 
 \item{tz}{character(1) POSIXct time zone code, defaults to "EST"}
+
+\item{rescale_mem}{logical(1) if TRUE, divide reported MEM_Used by 1000}
 }
 \value{
 a data.frame

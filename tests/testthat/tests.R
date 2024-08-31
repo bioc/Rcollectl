@@ -28,12 +28,12 @@ test_that("it works", {
  if (cl_exists()) {
   lk = cl_start()
   x = rnorm(2e7)
-  Sys.sleep(5)
+  Sys.sleep(8)
   x = rnorm(2e7)
   cl_stop(lk)
   targ = cl_result_path(lk)
   expect_true(file.exists(targ))
   p = cl_parse(targ)
-  expect_true(nrow(p)>=5)
+  expect_true(nrow(p)>=5)  # at sleep of 5, had 4 rows!
   }
 })

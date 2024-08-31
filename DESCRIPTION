@@ -1,6 +1,6 @@
 Package: Rcollectl
 Title: Help use collectl with R in Linux, to measure resource consumption in R processes
-Version: 1.5.0
+Version: 1.5.1
 Date: 2023-03-08
 Authors@R: 
     c(person(given = "Vincent",
@@ -22,7 +22,7 @@ BugReports: https://support.bioconductor.org/t/Rcollectl
 biocViews: Software, Infrastructure
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 SystemRequirements: collectl
 Suggests: 
     knitr,
