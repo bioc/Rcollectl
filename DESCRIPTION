@@ -33,3 +33,4 @@ Suggests:
     testthat,
     covr
 VignetteBuilder: knitr
+Config/Bioconductor/UnsupportedPlatforms: windows, macosx
